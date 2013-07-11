@@ -1,0 +1,23 @@
+
+public class LargestPrimeFactor {
+
+  public static void main(String [] args){
+		int counter = 0;
+		long NUMBER = 600851475143L;
+		
+		for (int i = 1; i <= NUMBER; i++){
+			
+			if(NUMBER % i == 0){
+				++counter;
+				NUMBER /= i;
+				System.out.println(i);
+				
+				
+			}
+			
+			
+		}
+		System.out.println(counter);
+	}
+	
+}
