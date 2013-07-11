@@ -1,0 +1,35 @@
+
+public class LargestPalindromeProduct {
+
+  public static void main(String [] args){
+		
+		int a = 100;
+		int b = 100;
+		
+		for(a = 999; a>900; a--){
+			
+			for(b = 999; b>900; b--){
+				
+				StringBuilder sb = new StringBuilder();
+				sb.append("");
+				sb.append((a * b));
+				
+				if((sb.charAt(0) == sb.charAt(sb.length()-1)) 
+						
+					&& (sb.charAt(1) == sb.charAt(sb.length()-2))
+						
+					&& (sb.charAt(2) == sb.charAt(sb.length()-3))
+					
+						){
+					
+					System.out.println(sb);
+					
+				}
+				
+			}
+			
+		}
+				
+	}
+	
+}
