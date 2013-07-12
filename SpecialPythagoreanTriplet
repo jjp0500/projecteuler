@@ -1,0 +1,33 @@
+
+public class SpecialPythagoreanTriplet {
+
+  public static void main (String [] args){
+		int a=300;
+		int b=300;
+		int c=300;
+		
+		for(a=25 ; a<900 ; a++){
+			
+			for(b=25 ; b<900 ; b++){
+				
+				for(c=25 ; c<900 ; c++){
+						
+						if(((a + b + c)==1000)
+							
+							
+							&&
+								
+							(Math.pow(a, 2)+
+							 Math.pow(b, 2)
+							 == Math.pow(c, 2))
+								 
+						){
+								
+							System.out.println(a + " " + b + " " + c + "is the correct answer and their product is " + (a*b*c));
+								
+					}else continue;
+				}
+			}
+		}
+	}
+}
