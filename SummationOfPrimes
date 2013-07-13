@@ -1,0 +1,63 @@
+
+public class SummationOfPrimes {
+
+  public static void main(String [] args){
+		
+		int n = 0;
+		int numberofprimes = 0;
+		long sum = 0;
+		int i = 0;
+		int c = 0;
+		
+		
+		for (n = 2; n < 2000000; n++){
+			
+			double b = (Math.sqrt(n));
+			c = (int) b;
+			
+			if(n == 2 || n == 3){
+				
+				System.out.println(n + " is prime");
+				++numberofprimes;
+				sum += n;
+				
+			}else{
+			
+				for (i = 2; i <= c; i++){
+						
+						
+					if(n % i == 0){
+						
+
+				//		System.out.println(n + " is not prime");
+						break;
+									
+					
+					
+					}else{
+						
+						if(i == c){
+							
+							++numberofprimes;
+							sum += n;
+							System.out.println(n + " is prime");
+							
+						}else{
+							
+							continue;
+							
+						}
+								
+							
+					}
+				
+				}
+			
+			}
+		
+		}
+		System.out.println("Primes Found: " + numberofprimes);
+		System.out.println("Sum of Primes Under " + n + " is " + sum);
+		
+	}
+}
